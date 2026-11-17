@@ -1,0 +1,18 @@
+; sdgfingern.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "sdgfingern"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas
+
+LoadFunciones3		@1
+SVEView				@2
+InformesView		@3
+HorariosView		@4
+FestivosView		@5
+DepartamentosView	@6
+ParametrosView		@7
+
+; Explicit exports can go here
+DllRegisterServer   @10 PRIVATE
+DllUnregisterServer	@11 PRIVATE

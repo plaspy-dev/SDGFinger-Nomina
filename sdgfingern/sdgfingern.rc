@@ -1,0 +1,455 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "sdgfingern.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>. Reservados todos los derechos."
+            VALUE "OriginalFilename", "sdgfingern.dll"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1252
+    END
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (Colombia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESO)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_COLOMBIA
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FFESTIVOS DIALOGEX 0, 0, 233, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DFECHA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,67,105,158,15
+    EDITTEXT        IDC_EOBSERVACIONES,67,122,158,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Aceptar",IDC_BACEPTAR,119,139,50,14
+    PUSHBUTTON      "Cancelar",IDC_BCANCELAR,175,139,50,14
+    CONTROL         "",IDC_LLISTADO,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,7,220,96
+    LTEXT           "Fecha",IDC_SFECHA,7,109,20,8
+    LTEXT           "Observaciones",IDC_SOBSERVACIONES,7,127,48,8
+END
+
+IDD_FHORARIOS DIALOGEX 0, 0, 411, 334
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Nombre",IDC_SNOMBRE,97,14,26,8
+    EDITTEXT        IDC_ENOMBRE,140,10,151,14,ES_AUTOHSCROLL
+    CONTROL         "Horario diario",IDC_RDIARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,83,26,59,10
+    CONTROL         "Entrada",IDC_RDIARIOHOR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,99,43,41,10
+    CONTROL         "",IDC_DDIARIOENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,143,39,56,15
+    LTEXT           "Salida",IDC_SDIARIOSALIDA,206,43,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DDIARIOSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,233,39,56,15
+    CONTROL         "Horas del turno",IDC_RDIARIOTURNO,"Button",BS_AUTORADIOBUTTON,99,64,65,10
+    CONTROL         "",IDC_DDIARIOTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,61,39,15
+    GROUPBOX        "Dias Laborales",IDC_SDIARIODIAS,304,34,97,75,0,WS_EX_TRANSPARENT
+    CONTROL         "Lunes",IDC_CLUNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,43,35,10
+    CONTROL         "Martes",IDC_CMARTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,52,38,10
+    CONTROL         "Miercoles",IDC_CMIERCOLES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,61,45,10
+    CONTROL         "Jueves",IDC_CJUEVES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,70,39,10
+    CONTROL         "Viernes",IDC_CVIERNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,79,39,10
+    CONTROL         "Sabado",IDC_CSABADO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,88,40,10
+    CONTROL         "Domingos y festivos",IDC_CDOMINGO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,97,80,10
+    CONTROL         "Cumplir horas semanales",IDC_RSEMANAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,83,98,95,10
+    CONTROL         "",IDC_DSEMANAHORA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,94,39,15
+    CONTROL         "Almuerzo",IDC_CALMUERZO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,117,321,10
+    CONTROL         "Salida",IDC_RALMUERZOHORARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,99,134,35,10
+    CONTROL         "",IDC_DALMUERZOSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,143,130,56,15
+    LTEXT           "Entrada",IDC_SALMUERZOENTRADA,206,134,26,8,NOT WS_GROUP
+    CONTROL         "",IDC_DALMUERZOENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,233,130,56,15
+    CONTROL         "Horas de almuerzo",IDC_RALMUERZOTURNO,"Button",BS_AUTORADIOBUTTON,99,153,75,10
+    CONTROL         "",IDC_DALMUERZOTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,151,39,15
+    CONTROL         "Sabados",IDC_CSABADOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,177,321,10
+    CONTROL         "Entrada",IDC_RSABADOSHORARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,99,193,41,10
+    CONTROL         "",IDC_DSABADOSENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,143,191,56,15
+    LTEXT           "Salida",IDC_SSABADOSSALIDA,206,193,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DSABADOSSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,233,191,56,15
+    CONTROL         "Horas del turno",IDC_RSABADOSTURNO,"Button",BS_AUTORADIOBUTTON,99,213,65,10
+    CONTROL         "",IDC_DSABADOSTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,210,39,15
+    CONTROL         "Festivos",IDC_CNOHABILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,234,321,10
+    CONTROL         "Entrada",IDC_RNOHABILESHORARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,99,251,41,10
+    CONTROL         "",IDC_DNOHABILESENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,143,248,56,15
+    LTEXT           "Salida",IDC_SFESTIVOSSALIDA,206,251,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DNOHABILESSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,233,248,56,15
+    CONTROL         "Horas del turno",IDC_RNOHABILESTURNO,"Button",BS_AUTORADIOBUTTON,99,271,65,10
+    CONTROL         "",IDC_DNOHABILESTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,268,39,15
+    LTEXT           "",IDC_SFIN,83,293,321,8
+    DEFPUSHBUTTON   "Aceptar",IDC_BACEPTAR,298,311,50,14
+    PUSHBUTTON      "Cancelar",IDC_BCANCELAR,354,310,50,14
+    CONTROL         "",IDC_LHORARIOS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,64,319
+END
+
+IDD_FDEPARTAMENTOS DIALOGEX 0, 0, 260, 107
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDEPARTAMENTO,155,9,95,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDC_BACEPTAR,203,86,50,14
+    PUSHBUTTON      "Cancelar",IDC_BCANCELAR,149,86,50,14
+    CONTROL         "",IDC_LDEPARTAMENTOS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,96,93
+    LTEXT           "Departamento",IDC_SDEPARTAMENTO,106,12,47,8
+    CONTROL         "",IDC_LUSUARIOS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,106,26,146,58
+END
+
+IDD_FPARAMETROS DIALOGEX 0, 0, 224, 228
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DDESDE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,43,23,64,15
+    CONTROL         "",IDC_DHASTA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,139,23,64,15
+    EDITTEXT        IDC_EONOCTURNO,163,52,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EEDIURNA,163,67,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EENOCTURNA,163,82,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EODOMINCAL,163,97,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EEDDOMINICAL,163,112,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EENDOMINICAL,163,127,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERECARGONOCTURNO,163,142,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESMMLV,139,170,64,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAUXILIOTRANSPORTE,139,186,64,14,ES_RIGHT | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDC_BACEPTAR,153,207,50,14
+    PUSHBUTTON      "Cancelar",IDC_BCANCELAR,99,207,50,14
+    GROUPBOX        "Horario de trabajo diurno",IDC_STATIC,7,7,210,40,0,WS_EX_TRANSPARENT
+    LTEXT           "Desde",IDC_STATIC,18,25,21,8
+    LTEXT           "Hasta",IDC_STATIC,114,25,20,8
+    LTEXT           "Hora extra diurna",IDC_STATIC,21,70,58,8
+    LTEXT           "Hora extra nocturna",IDC_STATIC,21,85,66,8
+    LTEXT           "Hora extra diurna en dominical o festivo",IDC_STATIC,21,115,128,8
+    LTEXT           "Hora extra nocturna en dominical o festivo",IDC_STATIC,21,130,137,8
+    LTEXT           "Hora trabajo nocturno",IDC_STATIC,21,55,72,8
+    LTEXT           "Hora ordinaria dominical o festivo",IDC_STATIC,21,100,107,8
+    GROUPBOX        "Valor Por hora",IDC_STATIC,7,46,210,113,0,WS_EX_TRANSPARENT
+    LTEXT           "Recargo nocturno",IDC_STATIC,21,145,58,8
+    GROUPBOX        "Valores",IDC_STATIC,7,162,210,43,0,WS_EX_TRANSPARENT
+    LTEXT           "Salario mínimo mensual legal vigente",IDC_STATIC,21,173,116,8
+    LTEXT           "Auxilio de transporte",IDC_STATIC,21,189,68,8
+END
+
+IDD_DPOPUP DIALOGEX 0, 0, 318, 27
+STYLE DS_SYSMODAL | DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+EXSTYLE WS_EX_TOPMOST
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_SMATRIZ,0,0,318,27,WS_BORDER
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de SDGFinger"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,11,17,20,20
+    LTEXT           "SDGFinger Nómina Versión 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "(C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "Aceptar",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SVE_FORM DIALOGEX 0, 0, 273, 120
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ECEDULA,104,10,105,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDOCUMENTO,104,25,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENOMBRE,63,41,146,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CDEPARTAMENTO,104,56,105,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EVALOR,104,71,105,14,ES_RIGHT | ES_AUTOHSCROLL
+    COMBOBOX        IDC_CHORARIO,104,86,105,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Editar",IDC_BOTRO,211,85,50,14
+    PUSHBUTTON      "Aceptar",IDC_BACEPTAR,160,101,50,16
+    PUSHBUTTON      "&Cancelar",IDC_BUTTON3,212,101,50,16
+    LTEXT           "Id",IDC_STATIC,12,13,8,8
+    LTEXT           "Nombres",IDC_STATIC,12,44,29,8
+    LTEXT           "Departamento",IDC_STATIC,12,59,47,8
+    LTEXT           "Salario",IDC_STATIC,12,74,22,8
+    LTEXT           "Horario",IDC_STATIC,12,88,24,8
+    LTEXT           "Documento",IDC_STATIC,12,28,37,8
+END
+
+IDD_FINFORMES DIALOGEX 0, 0, 386, 78
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DDESDE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,13,21,58,15
+    CONTROL         "",IDC_DHASTA,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,76,21,58,15
+    COMBOBOX        IDC_CDEPARTAMENTO,137,21,64,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDOCUMENTO,204,21,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Aceptar",IDOK,272,21,50,14
+    PUSHBUTTON      "&Opciones",IDC_BOPCIONES,330,21,50,14
+    LTEXT           "Desde",IDC_SDESDE,15,12,21,8
+    LTEXT           "Hasta",IDC_SHASTA,78,12,20,8
+    GROUPBOX        "Parametros",IDC_STATIC,7,5,319,35,0,WS_EX_TRANSPARENT
+    LTEXT           "Documento",IDC_STATIC,207,12,37,8
+    LTEXT           "Departamento",IDC_STATIC,140,12,47,8
+END
+
+IDD_DGUARDAR DIALOGEX 0, 0, 186, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Guardar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Usuario",IDC_CUSUARIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,40,10
+    CONTROL         "Días",IDC_CDIAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,21,29,10
+    CONTROL         "Horas",IDC_CHORAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,35,35,10
+    DEFPUSHBUTTON   "Aceptar",IDOK,37,57,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,97,57,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,11,25,9,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,25,40,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,24,31,1,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,10,18,1,8
+END
+
+IDD_DHORARIO DIALOGEX 0, 0, 342, 300
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Editar Horario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,229,279,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,285,279,50,14
+    CONTROL         "Horario diario",IDC_RDIARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,10,59,10
+    CONTROL         "Entrada",IDC_RDIARIOHOR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,27,41,10
+    CONTROL         "",IDC_DDIARIOENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,63,24,56,15
+    LTEXT           "Salida",IDC_SDIARIOSALIDA,130,28,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DDIARIOSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,159,24,56,15
+    CONTROL         "Horas del turno",IDC_RDIARIOTURNO,"Button",BS_AUTORADIOBUTTON,20,50,65,10
+    CONTROL         "",IDC_DDIARIOTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,120,45,39,15
+    GROUPBOX        "Dias Laborales",IDC_SDIARIODIAS,231,19,97,74
+    CONTROL         "Lunes",IDC_CLUNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,27,35,10
+    CONTROL         "Martes",IDC_CMARTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,36,38,10
+    CONTROL         "Miercoles",IDC_CMIERCOLES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,45,45,10
+    CONTROL         "Jueves",IDC_CJUEVES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,54,39,10
+    CONTROL         "Viernes",IDC_CVIERNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,63,39,10
+    CONTROL         "Sabado",IDC_CSABADO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,72,40,10
+    CONTROL         "Domingos y festivos",IDC_CDOMINGO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,81,80,10
+    CONTROL         "Cumplir horas semanales",IDC_RSEMANAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,80,95,10
+    CONTROL         "",IDC_DSEMANAHORA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,120,76,39,15
+    CONTROL         "Almuerzo",IDC_CALMUERZO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,98,324,10
+    CONTROL         "Salida",IDC_RALMUERZOHORARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,115,35,10
+    CONTROL         "",IDC_DALMUERZOSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,63,111,56,15
+    LTEXT           "Entrada",IDC_SALMUERZOENTRADA,130,114,26,8,NOT WS_GROUP
+    CONTROL         "",IDC_DALMUERZOENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,159,111,56,15
+    CONTROL         "Horas de almuerzo",IDC_RALMUERZOTURNO,"Button",BS_AUTORADIOBUTTON,20,133,75,10
+    CONTROL         "",IDC_DALMUERZOTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,120,131,39,15
+    CONTROL         "Sabados",IDC_CSABADOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,158,324,10
+    CONTROL         "Entrada",IDC_RSABADOSHORARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,174,41,10
+    CONTROL         "",IDC_DSABADOSENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,63,169,56,15
+    LTEXT           "Salida",IDC_SSABADOSSALIDA,130,174,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DSABADOSSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,159,169,56,15
+    CONTROL         "Horas del turno",IDC_RSABADOSTURNO,"Button",BS_AUTORADIOBUTTON,20,192,65,10
+    CONTROL         "",IDC_DSABADOSTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,120,189,39,15
+    CONTROL         "Festivos",IDC_CNOHABILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,215,324,10
+    CONTROL         "Entrada",IDC_RNOHABILESHORARIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,232,41,10
+    CONTROL         "",IDC_DNOHABILESENTRADA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,63,229,56,15
+    LTEXT           "Salida",IDC_SFESTIVOSSALIDA,130,232,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DNOHABILESSALIDA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,159,229,56,15
+    CONTROL         "Horas del turno",IDC_RNOHABILESTURNO,"Button",BS_AUTORADIOBUTTON,20,251,65,10
+    CONTROL         "",IDC_DNOHABILESTURNO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,120,248,39,15
+    LTEXT           "",IDC_SFIN,7,264,328,8
+END
+
+IDD_DUSUARIOS DIALOGEX 0, 0, 221, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Usuarios"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,56,108,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,114,108,50,14
+    CONTROL         "",IDC_LUSUARIOS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,207,98
+END
+
+IDD_DDCONFIGURAR DIALOGEX 0, 0, 186, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configurar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DTOLERANCIA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,68,9,41,15
+    PUSHBUTTON      "Button1",IDC_BALERTA2,59,37,50,14
+    PUSHBUTTON      "Button1",IDC_BEXTRAS,59,52,50,14
+    CONTROL         "&Usar fechas largas",IDC_CLARGAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,81,75,10
+    CONTROL         "&Mostrar todos los días",IDC_CDIAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,95,86,10
+    CONTROL         "Calcular Valores de horas extras",IDC_CCALCULAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,109,119,10
+    CONTROL         "Mostrar diferencia de tiempos",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,123,111,10
+    DEFPUSHBUTTON   "Aceptar",IDOK,37,141,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,93,141,50,14
+    LTEXT           "Tolerancia",IDC_STATIC,15,11,34,8
+    LTEXT           "Alerta",IDC_STATIC,19,40,20,8
+    GROUPBOX        "Colores",IDC_STATIC,14,25,160,50
+    LTEXT           "Extras",IDC_STATIC,19,55,22,8
+    LTEXT           "Minutos",IDC_STATIC,116,12,26,8
+END
+
+IDD_DOPCIONES DIALOGEX 0, 0, 171, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuración"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Reemplazar a SDGFinger Nómina Cliente",IDC_CCLIENTE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,157,10
+    CONTROL         "Deshabilitar protector de pantalla",IDC_CPROTECTOR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,157,10
+    CONTROL         "Usar Display LCD",IDC_CDISPLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,31,157,10
+    EDITTEXT        IDC_EDIRECCION,54,44,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "Aceptar",IDOK,60,76,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,114,76,50,14
+    LTEXT           "Dirección",IDC_STATIC,24,46,30,8
+    PUSHBUTTON      "Cerrar sesión",IDC_BCERRAR,7,76,50,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\sdgfingern.rc2""  // Recursos editados que no son de Microsoft Visual C++\r\n"
+    "#include ""l.ESN\\afxres.rc""      // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FDEPARTAMENTOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_FPARAMETROS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_SVE_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 267
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 117
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Español (Colombia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\sdgfingern.rc2"  // Recursos editados que no son de Microsoft Visual C++
+#include "l.ESN\afxres.rc"      // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
