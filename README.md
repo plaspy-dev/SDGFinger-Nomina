@@ -8,7 +8,7 @@ Aplicación de escritorio para organizar horarios y consultar registros de asist
 
 ### Esta revisión
 
-**2026-11-17 · Organizar horarios e informes de asistencia.** Recupera las pantallas de horarios, usuarios y calendarios junto con los informes. Al definir las jornadas en un solo lugar, el personal puede consultar la asistencia con el mismo horario de referencia.
+**2026-11-17 · Identificar el lector y el SDK de huellas.** Aclara qué necesita el proyecto para capturar una huella física y qué referencias conserva la solución de Windows. El lector puede distinguir la revisión de los formularios de una prueba con hardware.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A desktop application for organizing schedules and reviewing attendance. It keep
 
 ### This revision
 
-**2026-11-17 · Organize attendance schedules and reports.** Recover schedule, user, and calendar screens together with reports. Keeping work schedules in one place gives the attendance views a shared reference.
+**2026-11-17 · Identify the fingerprint reader and SDK requirements.** Clarify what the project needs to capture a physical fingerprint and which references the Windows solution retains. Readers can distinguish reviewing the forms from testing with hardware.
 
 ### How to explore the source
 
