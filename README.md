@@ -6,32 +6,42 @@
 
 Aplicación de escritorio para organizar horarios y consultar registros de asistencia. Permite preparar la información de usuarios y calendarios que se usa al revisar jornadas de trabajo.
 
-### Esta revisión
+### Qué puedes hacer
 
-**2026-11-17 · Identificar el lector y el SDK de huellas.** Aclara qué necesita el proyecto para capturar una huella física y qué referencias conserva la solución de Windows. El lector puede distinguir la revisión de los formularios de una prueba con hardware.
+- Administra departamentos, usuarios, horarios y días festivos.
+- Conserva pantallas para días no laborables y parámetros del sistema.
+- Consulta informes y opciones asociadas al registro de asistencia.
 
-### Cómo explorar el código
+### Ejemplo
+
+Usa un empleado ficticio, un horario de mañana y un día festivo de prueba. Sigue la configuración antes de revisar qué informe ofrece la aplicación.
+
+### Cómo empezar
 
 El código se creó para Windows y Visual C++. Usa las versiones de MFC o de los SDK que indiquen la solución y sus referencias. Los recursos y componentes externos de la época pueden requerir una copia autorizada. La compilación completa depende de ese entorno original.
 
-- [appt/appt.sln](appt/appt.sln)
-- [SVE/SVE.sln](SVE/SVE.sln)
-- [Template/Template.sln](Template/Template.sln)
-- [appt/appt.vcproj](appt/appt.vcproj)
+Puntos de entrada en el código. [`appt/appt.sln`](appt/appt.sln), [`SVE/SVE.sln`](SVE/SVE.sln), [`Template/Template.sln`](Template/Template.sln), [`appt/appt.vcproj`](appt/appt.vcproj).
+
+Las fechas del historial se apoyan en Git o en la evidencia disponible de los respaldos. Las fechas reconstruidas a partir de archivos sin zona horaria usan las 12:00 UTC como referencia.
 
 ## English
 
 A desktop application for organizing schedules and reviewing attendance. It keeps the user and calendar details used when reviewing workdays.
 
-### This revision
+### What you can do
 
-**2026-11-17 · Identify the fingerprint reader and SDK requirements.** Clarify what the project needs to capture a physical fingerprint and which references the Windows solution retains. Readers can distinguish reviewing the forms from testing with hardware.
+- Manage departments, users, schedules, and holidays.
+- Preserves screens for nonworking days and system settings.
+- Review reports and settings related to attendance tracking.
 
-### How to explore the source
+### Example
+
+Use a fictional employee, a morning schedule, and a sample holiday. Explore the setup before reviewing the available reports.
+
+### Getting started
 
 The code was written for Windows and Visual C++. Use the MFC and SDK versions indicated by the solution and its references. Historical resources and external components may require an authorized copy. A full build depends on that original environment.
 
-- [appt/appt.sln](appt/appt.sln)
-- [SVE/SVE.sln](SVE/SVE.sln)
-- [Template/Template.sln](Template/Template.sln)
-- [appt/appt.vcproj](appt/appt.vcproj)
+Entry points in the source. [`appt/appt.sln`](appt/appt.sln), [`SVE/SVE.sln`](SVE/SVE.sln), [`Template/Template.sln`](Template/Template.sln), [`appt/appt.vcproj`](appt/appt.vcproj).
+
+History dates come from Git or available backup evidence. Reconstructed dates from files with no time zone use 12:00 UTC as a reference.
